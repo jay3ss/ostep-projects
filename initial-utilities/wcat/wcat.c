@@ -17,14 +17,14 @@ int main(int argc, char* argv[]) {
     if (argc > 1) {
         for (int i = 1; i < argc; i++) {
             FILE* file = fopen(argv[i], "r");
-            if (file == NULL) { 
+            if (file == NULL) {
                 puts("wcat: cannot open file");
-                return 1; 
+                return 1;
             }
             print_file(file);
             fclose(file);
         }
-    } 
+    }
 
     return 0;
 }
